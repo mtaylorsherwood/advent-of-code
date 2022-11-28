@@ -1,15 +1,20 @@
+package twentytwentyone;
+
+import utils.days;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class dayThree extends days {
+    private final static String year = "2021";
     private final static String day = "03";
 
     public static void main(String[] args) throws IOException {
         System.out.println("Running day " + day + " puzzles");
-        refreshScanner(day);
+        days.refreshScanner(year, day);
         puzzleOne();
-        refreshScanner(day);
+        days.refreshScanner(year, day);
         puzzleTwo();
         System.out.println("END");
     }
@@ -21,8 +26,8 @@ public class dayThree extends days {
         List<String> list = new ArrayList<>();
         StringBuilder epsilon = new StringBuilder();
         StringBuilder gamma = new StringBuilder();
-        while (input.hasNextLine()) {
-            list.add(input.nextLine());
+        while (days.input.hasNextLine()) {
+            list.add(days.input.nextLine());
         }
         for (int i = 0; i < 12; i++) {
             for (String line : list) {

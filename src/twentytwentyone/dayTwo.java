@@ -1,15 +1,20 @@
+package twentytwentyone;
+
+import utils.days;
+
 import java.io.IOException;
 
 public class dayTwo extends days {
+    private final static String year = "2021";
     private final static String day = "02";
     private static String direction;
     private static int units;
 
     public static void main(String[] args) throws IOException {
         System.out.println("Running day " + day + " puzzles");
-        refreshScanner(day);
+        days.refreshScanner(year, day);
         puzzleOne();
-        refreshScanner(day);
+        days.refreshScanner(year, day);
         puzzleTwo();
         System.out.println("END");
     }
@@ -19,7 +24,7 @@ public class dayTwo extends days {
         int horizontal = 0;
         int depth = 0;
 
-        while (input.hasNextLine()) {
+        while (days.input.hasNextLine()) {
             processLine();
             switch (direction) {
                 case "forward" -> horizontal = (horizontal + units);
@@ -37,7 +42,7 @@ public class dayTwo extends days {
         int depth = 0;
         int aim = 0;
 
-        while (input.hasNextLine()) {
+        while (days.input.hasNextLine()) {
             processLine();
             switch (direction) {
                 case "forward" -> {
@@ -53,7 +58,7 @@ public class dayTwo extends days {
     }
 
     private static void processLine() {
-        String line = input.nextLine();
+        String line = days.input.nextLine();
         direction = line.substring(0, line.indexOf(' '));
         units = Integer.parseInt(line.substring(line.indexOf(' ') + 1));
     }

@@ -1,13 +1,16 @@
+package utils;
+
 import java.io.IOException;
 
 public class template extends days {
+    private final static String year = "2042";
     private final static String day = "99";
 
     public static void main(String[] args) throws IOException {
         System.out.println("Running day " + day + " puzzles");
-        refreshScanner(day);
+        days.refreshScanner(year, day);
         puzzleOne();
-        refreshScanner(day);
+        days.refreshScanner(year, day);
         puzzleTwo();
         System.out.println("END");
     }
