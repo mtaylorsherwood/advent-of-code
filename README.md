@@ -16,3 +16,4 @@ All times in minutes.
 | Two   |     ~      |     ~      |                                                                                                |
 | Three |     ~      |     ~      |                                                                                                |
 | Four  |     30     |     3      | I'd done the hard work for the first puzzle, I feel they should have been the other way around |
+| Five  |     35     |     15     |                                                                                                |
