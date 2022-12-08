@@ -17,3 +17,4 @@ All times in minutes.
 | Three |     ~      |     ~      |                                                                                                |
 | Four  |     30     |     3      | I'd done the hard work for the first puzzle, I feel they should have been the other way around |
 | Five  |     35     |     15     |                                                                                                |
+| Six   |     19     |     60     | Wrong approach on the second, plus the rate limiting for submitting wrong answers              |
