@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Util {
     public static Scanner getInputAsScanner(final String year, final String day) throws FileNotFoundException {
-        final String fileLoc = "C:\\development\\advent-of-code\\inputs\\" + "\\" + year + "\\" + day + "\\input.txt";
+        final String fileLoc = "D:\\advent-of-code\\inputs\\" + "\\" + year + "\\" + day + "\\input.txt";
 
         final File inputFile = new File(fileLoc);
 
