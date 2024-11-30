@@ -13,5 +13,6 @@ All times in minutes.
 | One   |     13     |     60     | Overlap of the words e.g "oneight" isn't 11 it's 18 threw me for far too long |
 | Two   |     26     |     8      |                                                                               |
 | Three |            |            |                                                                               |
-| Four  |            |            |                                                                               |
+| Four  |     60     |            |                                                                               |
 | Five  |            |            |                                                                               |
+| Six   |            |            |                                                                               |
