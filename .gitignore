@@ -2,3 +2,4 @@ out/
 .idea/
 answers.txt
 *.iml
+inputs/*/*/*.txt
