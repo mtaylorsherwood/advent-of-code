@@ -11,6 +11,9 @@ public class dayOne extends days {
     private final static String year = "2024";
     private final static String day = "01";
 
+    final static ArrayList<Integer> left = new ArrayList<>();
+    final static ArrayList<Integer> right = new ArrayList<>();
+
     public static void main(String[] args) {
         System.out.println("Running day " + day + " puzzles");
 
@@ -28,21 +31,8 @@ public class dayOne extends days {
 
     private static void puzzleOne() {
         int answer = 0;
-        final ArrayList<Integer> left = new ArrayList<>();
-        final ArrayList<Integer> right = new ArrayList<>();
-        int lineNo = 1;
 
-        while (input.hasNextLine()) {
-            final String line = input.nextLine();
-            for (String c : line.split(" {3}")) {
-                if (lineNo % 2 == 0) {
-                    right.add(Integer.parseInt(c));
-                } else {
-                    left.add(Integer.parseInt(c));
-                }
-                lineNo++;
-            }
-        }
+        populateLists();
 
         Collections.sort(left);
         Collections.sort(right);
@@ -59,8 +49,14 @@ public class dayOne extends days {
     private static void puzzleTwo() {
         int answer = 0;
 
-        final ArrayList<Integer> left = new ArrayList<>();
-        final ArrayList<Integer> right = new ArrayList<>();
+        for (int location : left) {
+            answer += (location * Collections.frequency(right, location));
+        }
+
+        System.out.println("Puzzle Two: " + answer);
+    }
+
+    private static void populateLists() {
         int lineNo = 1;
 
         while (input.hasNextLine()) {
@@ -74,11 +70,5 @@ public class dayOne extends days {
                 lineNo++;
             }
         }
-
-        for (int location : left) {
-            answer += (location * Collections.frequency(right, location));
-        }
-
-        System.out.println("Puzzle Two: " + answer);
     }
 }
