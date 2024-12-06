@@ -15,7 +15,7 @@ All times in minutes.
 | 03  |     30     |     25     |                                                                                                                                 |
 | 04  |     90     |     32     | Exceptions? What exceptions... nothing to see here.                                                                             |
 | 05  |     25     |    100     | Part two is a write off... Really should have a method that checks and proves the correctness of the line rather than the loops |
-| 06  |            |            |                                                                                                                                 |
+| 06  |     60     |            | Forgot to remove the `^` denoting the starting guard position, then needed to make sure positions were unique                   |
 | 07  |            |            |                                                                                                                                 |
 | 08  |            |            |                                                                                                                                 |
 | 09  |            |            |                                                                                                                                 |
